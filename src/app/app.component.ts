@@ -14,7 +14,6 @@ const url = URL.createObjectURL(new Blob([Buffer.from(base64Pdf, 'base64')], {ty
 export class AppComponent {
   pdfUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   pdfUrlFitW = this.sanitizer.bypassSecurityTrustResourceUrl(url + '#view=FitH');
-  dataUrl = this.sanitizer.bypassSecurityTrustResourceUrl('data:application/pdf;base64,' + base64Pdf + '#view=FitH');
 
   constructor(public sanitizer: DomSanitizer) { }
 }

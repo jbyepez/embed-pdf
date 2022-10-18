@@ -1,20 +1,27 @@
 <p>object version:</p>
 <object [data]="pdfUrlFitW" type="application/pdf" width="70%" height="400px">
-  <p>pdf plugin not supported, you can:</p>
-  <p><a target="_blank" [href]="pdfUrl">open pdf</a></p>
-  <p><a download="file" [href]="pdfUrl">download pdf</a></p>
+  <div width="70%" height="400px" style="background-color: #EBEBEB">
+    <p>pdf plugin not supported, you can:</p>
+    <p><a target="_blank" [href]="pdfUrl">open pdf</a></p>
+    <p><a download="file" [href]="pdfUrl">download pdf</a></p>
+  </div>
 </object>
 <p></p>
 <p>embed version:</p>
-<div>
-  <embed [src]="pdfUrlFitW" type="application/pdf" width="70%" height="400px" />
-</div>
+<embed [src]="pdfUrlFitW" type="application/pdf" width="70%" height="400px" />
 <p></p>
 <p>iframe version:</p>
-<iframe [src]="pdfUrlFitW" width="70%" height="400px" frameBorder="0">
-  <p>pdf plugin not supported, you can:</p>
-  <p><a target="_blank" [href]="pdfUrl">open pdf</a></p>
-  <p><a download="file" [href]="pdfUrl">download pdf</a></p>
+<iframe [src]="pdfUrlFitW" type="application/pdf" width="70%" height="400px" frameBorder="0">
+  <div width="70%" height="400px" style="background-color: #EBEBEB">
+    <p>pdf plugin not supported, you can:</p>
+    <p><a target="_blank" [href]="pdfUrl">open pdf</a></p>
+    <p><a download="file" [href]="pdfUrl">download pdf</a></p>
+  </div>
 </iframe>
+<p></p>
+<p>object-embed version:</p>
+<object [data]="pdfUrlFitW" type="application/pdf" width="70%" height="400px">
+  <embed [src]="pdfUrlFitW" type="application/pdf" width="70%" height="400px" />
+</object>
 <p><a target="_blank" [href]="pdfUrl">open pdf</a></p>
 <p><a download="file" [href]="pdfUrl">download pdf</a></p>
